@@ -1,0 +1,251 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+    background-color: #fef7e5; /* Cream background from your image */
+  }
+  
+  .wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start; /* change from center to flex-start */
+    padding: 4% 40px 40px 40px; /* add 10% padding-top */
+  }
+  
+  
+  .container {
+    display: flex;
+    width: 56%; /* reduced from 70% -> 20% smaller */
+    max-width: 880px; /* reduced from 1100px -> 20% smaller */
+    height: 64vh; /* reduced from 80vh -> 20% smaller */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 20px; /* <-- added rounded corners */
+    overflow: hidden; /* <-- so image and form respect the round border */
+  }
+  
+  
+  .left, .right {
+    flex: 1;
+    height: 100%;
+  }
+  
+  .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px; /* optional, but with overflow:hidden you don't need it */
+    border-bottom-left-radius: 20px;
+  }
+  
+  
+  .right {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .form {
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+  .form h2 {
+    color: #f7941d;
+    margin-bottom: 8px;
+    font-size: 22px;
+  }
+  
+  .form p {
+    font-size: 13px;
+    margin-bottom: 16px;
+  }
+  
+  .form a {
+    color: #f7941d;
+    text-decoration: none;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .input-group input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  
+  button {
+    /* width: 100%; */
+    padding: 12px;
+    background-color: #f7941d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  
+  .or {
+    margin: 8px 0;
+    font-size: 13px;
+    color: #999;
+  }
+  
+  .login {
+    font-size: 13px;
+  }
+  
+  .login a {
+    color: #f7941d;
+    text-decoration: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    background-color: #FEFAE0;
+    font-size: 16px;
+}
+
+
+/* Nav bar */
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    position: fixed;        /* Fixes the nav to the window */
+    top: 0;                 /* Aligns it to the top */
+    width: 98%;
+    padding: 5px 15px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F4EF;
+    font-size: 1.4rem;
+}
+.nav *{
+    padding: 0px 5px;
+}
+.logo img{
+    height: 30px;
+}
+
+.loginbtn img{
+    height: 20px;
+    padding: 0px 0px;
+}
+.loginbtn span{
+    padding-left: 0px;
+}
+.signupbtn{
+    font-size: 1.25rem;
+    background-color: #FA7335;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: none;    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer  */
+footer{
+    padding: 10px 20px;
+    background-color: #012e41;
+    color:white;
+}
+.information{
+    /* border: 2px solid red; */
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    font-size: 0.9rem;
+}
+.information h3{
+    font-size: 1.1rem;
+}
+.address{
+    /* padding-left: 5px; */
+    /* border: 2px solid green; */
+    width: 80%;
+}
+.address > img{
+    padding-top:18px;
+    height:14%;
+}
+.about a{
+    color: white;
+    text-decoration: none;
+}
+.gallery img{
+    width: 70%;
+}
+.copyright{
+    text-align: center;
+}
+/* .about{
+    border: 2px solid green;
+}
+.contact{
+    border: 2px solid green;
+}
+.gallery{
+    border: 2px solid green;
+} */
+

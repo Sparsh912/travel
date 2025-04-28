@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination</title>
+    <link rel="stylesheet" href="destination.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                <img src="icon/logo.png" alt="Triptopia">
+            </div>
+            <div>
+                <a href="http://127.0.0.1:3000/landingpage.html"><span>Home</span></a>
+                <a href="http://127.0.0.1:3000/destination.html"><span>Destination</span></a>
+                <a href="#information"><span>Contacts</span></a>
+            </div>
+            <div class="loginbtn">
+                <label for="login">
+                    <img value="login" src="icon/ic_user-1.svg" alt="">
+                    <span value="login"><a href="http://localhost/sparshPHP/login.php">Login</a></span>
+                </label>
+                <a href="http://localhost/sparshPHP/signup.php"><button class="signupbtn">Sign Up</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="top">
+            <img src="destination/Rectangle 182.png">
+        </div>
+        <div class="text">
+            <p>DESTINATION</p>
+            <p>
+                <span>Our Featured </span>
+                <span> Tours</span>
+            </p>
+        </div>
+        <div class="cards">
+
+            <div class="card1 cardtype1" id="Dubai"><a><img src="destination/dubai.png"></a></div>
+            <div class="card2 cardtype1" id="Bali"><a><img src="destination/bali.png"></a></div>
+
+            <div class="card3 cardtype2" id="Sydney"><a><img src="destination/sydney.png"></a></div>
+            <div class="card4 cardtype2" id="Phetchabun"><a><img src="destination/phetchabun.png"></a></div>
+            <div class="card5 cardtype2" id="Phi_phi_island"><a><img src="destination/phi phi island.png"></a></div>
+
+            <div class="card6 cardtype1" id="London"><a><img src="destination/big ben.png"></a></div>
+            <div class="card7 cardtype1" id="Paris"><a><img src="destination/paris.png"></a></div>
+
+            <div class="card8 cardtype2" id="Maldives"><a><img src="destination/maatushi island.png"></a></div>
+            <div class="card9 cardtype2" id="Philippines"><a><img src="destination/el nido.png"></a></div>
+            <div class="card10 cardtype2" id="Wuxi"><a><img src="destination/wuxi.png"></a></div>
+
+        </div>
+    </main>
+    <script>
+        // document.getElementById('Dubai').addEventListener('click', function(e) {
+        //     e.preventDefault();
+
+        //     const place = "Dubai";
+        //     window.localStorage.setItem("placename", place);
+
+        //     window.location.href="http://localhost/sparshPHP/dbconnect.php";
+        //     //window.location.href="http://localhost/sparshPHP/dbconnect.php" +encodeURIComponent(place) ;
+        //     // window.location.href="http://localhost/sparshPHP/dbconnect.php"+encodeURIComponent(place);
+
+        // });
+
+        document.getElementById('Dubai').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "Dubai";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+        document.getElementById('Bali').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "Bali";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+        document.getElementById('Sydney').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "Sydney";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+        document.getElementById('Phetchabun').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "Phetchabun";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+        document.getElementById('Phi_phi_island').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "Phi_phi_islandbai";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+        document.getElementById('London').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "London";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+        document.getElementById('Paris').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "Paris";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+        document.getElementById('Maldives').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "Maldives";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+        document.getElementById('Philippines').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "Philippines";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+        document.getElementById('Wuxi').addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const place = "Wuxi";
+            window.localStorage.setItem("placename", place);
+
+            // Pass the place in the URL as a query parameter
+            window.location.href = "http://localhost/sparshPHP/places.php?place=" + encodeURIComponent(place);
+        });
+
+    </script>
+
+
+    <footer>
+        <div class="information" id="information">
+            <div class="address">
+                <img src="icon/log _bg_blue.png">
+                <p>Hello, we are Lift Media. Our goal is to translate the positive effects from revolutionizing</p>
+                <div class="icon">
+                    <a href="#"><img src="icon/facebook.png"></a>
+                    <a href="#"><img src="icon/instagram.png"></a>
+                    <a href="#"><img src="icon/twitter.png"></a>
+
+                </div>
+            </div>
+            <div class="about">
+                <h3>About</h3>
+                <div><a href="#">About Us</a></div>
+                <div><a href="#">Our Services</a></div>
+                <div><a href="#">Policy</a></div>
+                <div><a href="#">Terms & condition</a></div>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <div>
+                    <img src="icon/contact.png">
+                    <span>+012 345 6789</span>
+                </div>
+                <div>
+                    <img src="icon/mail.png">
+                    <span>triptopia@gmail.com</span>
+                </div>
+                <div>
+                    <img src="icon/position.png">
+                    <span>123 street, Nagpur</span>
+                </div>
+
+            </div>
+            <div class="gallery">
+                <h3>Gallery</h3>
+                <img src="icon/footer.png">
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Triptopia. All rights reserved</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

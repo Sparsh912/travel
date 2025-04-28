@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    background-color: #FEFAE0;
+    font-size: 16px;
+}
+
+
+/* Nav bar */
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    z-index: 10;
+    position: fixed;        /* Fixes the nav to the window */
+    top: 0;                 /* Aligns it to the top */
+    width: 98%;
+    padding: 5px 15px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F4EF;
+    font-size: 1.4rem;
+}
+.nav *{
+    padding: 0px 5px;
+}
+.logo img{
+    height: 30px;
+}
+
+.loginbtn img{
+    height: 20px;
+    padding: 0px 0px;
+}
+.loginbtn span{
+    padding-left: 0px;
+}
+.signupbtn{
+    font-size: 1.25rem;
+    background-color: #FA7335;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: none;    
+
+}
+
+
+/* Top */
+.top{
+    position: relative;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vb;
+}
+.top img{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+.text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text > p:nth-child(1){
+    /* border: 2px solid red; */
+    position:absolute;
+    top: -30vh;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+/* .text{
+    border: 2px solid red;
+} */
+.text > p:nth-child(2){
+    /* border: 2px solid red; */
+    font-size: 40px;
+}
+.text > p:nth-child(2) span:nth-child(2){
+    color: #FAA935;
+}
+
+
+/* main cards */
+.cards{
+    padding: 0vw 12vw;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr ; */
+    gap: 20px;
+}
+/* .cardtype1 img{
+    height: 500px;
+}
+.cardtype2 img{
+    height: 140px;
+} */
+.card1{
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+.card2{
+    justify-self:end;
+    grid-column: 4/7;
+    grid-row: 1/3;
+}
+.card3{
+    /* border: 2px solid red; */
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.card4{
+    justify-self:center;
+    grid-column: 3/5;
+    grid-row: 3/4;
+}
+.card5{
+    justify-self:end;
+    grid-column: 5/7;
+    grid-row: 3/4;
+}
+.card6{
+    grid-column: 1/4;
+    grid-row: 4/6;
+}
+.card7{
+    justify-self:end;
+    grid-column: 4/7;
+    grid-row: 4/6;
+}
+.card8{
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+.card9{
+    justify-self:center;
+    grid-column: 3/5;
+    grid-row: 6/7;
+}
+.card10{
+    justify-self:end;
+    grid-column: 5/7;
+    grid-row: 6/7;
+}
+
+
+/* Footer  */
+footer{
+    padding: 10px 20px;
+    background-color: #012e41;
+    color:white;
+}
+.information{
+    /* border: 2px solid red; */
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    font-size: 0.9rem;
+}
+.information h3{
+    font-size: 1.1rem;
+}
+.address{
+    /* padding-left: 5px; */
+    /* border: 2px solid green; */
+    width: 80%;
+}
+.address > img{
+    padding-top:18px;
+    height:14%;
+}
+.about a{
+    color: white;
+    text-decoration: none;
+}
+.gallery img{
+    width: 70%;
+}
+.copyright{
+    text-align: center;
+}
+/* .about{
+    border: 2px solid green;
+}
+.contact{
+    border: 2px solid green;
+}
+.gallery{
+    border: 2px solid green;
+} */
+

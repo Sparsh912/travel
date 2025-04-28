@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f3e8;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    background-color: #FEFAE0;
+    font-size: 16px;
+}
+
+
+/* Nav bar */
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    z-index: 10;
+    position: fixed;        /* Fixes the nav to the window */
+    top: 0;                 /* Aligns it to the top */
+    width: 98%;
+    padding: 5px 15px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F4EF;
+    font-size: 1.4rem;
+}
+.nav *{
+    padding: 0px 5px;
+}
+.logo img{
+    height: 30px;
+}
+
+.loginbtn img{
+    height: 20px;
+    padding: 0px 0px;
+}
+.loginbtn span{
+    padding-left: 0px;
+}
+.signupbtn{
+    font-size: 1.25rem;
+    background-color: #FA7335;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: none;    
+
+}
+
+
+
+
+.hero {
+    background-image: url('/api/placeholder/1400/500');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.destination-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.destination-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    color: #ff6b35;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 16px;
+    color: #888;
+    font-weight: normal;
+}
+
+.description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.tour-details {
+    margin-top: 30px;
+}
+
+.tour-details h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #ff6b35;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.details-table td {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.details-table td:first-child {
+    font-weight: bold;
+    color: #333;
+    width: 40%;
+}
+
+.booking-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+}
+
+.booking-form h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 14px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.book-btn {
+    background-color: #ff6b35;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #e55a2a;
+}
+
+.gallery {
+    margin-top: 50px;
+}
+
+.gallery h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-img {
+    grid-column: 1/3;
+    width: 100%;
+    height: 250px;            /*Image size */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer  */
+footer{
+    padding: 10px 20px;
+    background-color: #012e41;
+    color:white;
+}
+.information{
+    /* border: 2px solid red; */
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    font-size: 0.9rem;
+}
+.information h3{
+    font-size: 1.1rem;
+}
+.address{
+    /* padding-left: 5px; */
+    /* border: 2px solid green; */
+    width: 80%;
+}
+.address > img{
+    padding-top:18px;
+    height:14%;
+}
+.about a{
+    color: white;
+    text-decoration: none;
+}
+.gallery img{
+    width: 70%;
+}
+.copyright{
+    text-align: center;
+}
+/* .about{
+    border: 2px solid green;
+}
+.contact{
+    border: 2px solid green;
+}
+.gallery{
+    border: 2px solid green;
+} */
+
+
+
+
+.highlights {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.highlights h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.highlight-icon {
+    background-color: #ff6b35;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.highlight-text {
+    color: #555;
+}
